@@ -1,0 +1,33 @@
+# Dépendances
+node_modules/
+
+# Build
+dist/
+out/
+build/
+
+# Environnement local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE / Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Vite cache
+.vite/
