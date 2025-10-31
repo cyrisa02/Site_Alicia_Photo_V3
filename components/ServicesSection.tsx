@@ -21,30 +21,44 @@ const services = [
 ];
 
 const ServiceCard: React.FC<{
-    icon: React.ReactNode;
-    title: string;
-    description: string;
-    href?: string; // <-- ajout
-  }> = ({ icon, title, description, href }) => {
-    const content = (
-      <div className="group relative p-8 bg-gray-900/50 border border-gray-800 rounded-xl transition-all duration-300 hover:border-[#6366F1] hover:-translate-y-1">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent to-[#6366F1]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div className="relative z-10">
-          <div className="mb-4 text-[#6366F1] group-hover:text-[#00FFB3] transition-colors duration-300">
-            {React.cloneElement(icon as React.ReactElement, { className: 'h-10 w-10' })}
-          </div>
-          <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-          <p className="text-gray-400">{description}</p>
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  href?: string;
+}> = ({ icon, title, description, href }) => {
+  const content = (
+    <div className="group relative p-8 bg-gray-900/50 border border-gray-800 rounded-xl transition-all duration-300 hover:border-[#6366F1] hover:-translate-y-1">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent to-[#6366F1]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div className="relative z-10">
+        <div className="mb-4 text-[#6366F1] group-hover:text-[#00FFB3] transition-colors duration-300">
+          {React.cloneElement(icon as React.ReactElement, { className: 'h-10 w-10' })}
         </div>
+        <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+        <p className="text-gray-400 mb-6">{description}</p>
+
+        {/* Bouton "En savoir plus" */}
+        {href ? (
+          <Link
+            to={href}
+            className="inline-flex items-center px-4 py-2 bg-[#6366F1] text-white font-medium rounded-lg transition-colors duration-300 hover:bg-[#00FFB3] hover:text-gray-900"
+          >
+            En savoir plus
+          </Link>
+        ) : (
+          <span className="inline-flex items-center px-4 py-2 bg-gray-700 text-gray-400 font-medium rounded-lg cursor-not-allowed">
+            En savoir plus
+          </span>
+        )}
       </div>
-    );
-  
-    return href ? (
-        <Link to={href} className="block h-full">
-          {content}
-        </Link>
-      ) : content;
-  };
+    </div>
+  );
+
+  return href ? (
+    <Link to={href} className="block h-full">
+      {content}
+    </Link>
+  ) : content;
+};
 
 const ServicesSection: React.FC = () => {
     return (
