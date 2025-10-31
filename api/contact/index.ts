@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>', // Vous pouvez changer cela après vérification de domaine
+      from: 'Contact Form <contact@alicia.gpt>', // 👈 Utilisez un expéditeur avec votre domaine
       to: ['alica.gpt.02@gmail.com'], // 👈 VOTRE ADRESSE EMAIL ICI
       subject: `Nouveau message de ${name} (${company})`,
       html: `
