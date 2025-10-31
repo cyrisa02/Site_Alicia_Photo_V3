@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
                         <p className="text-gray-500 mt-2">© 2025 AlicIA-GPT. Tous droits réservés.</p>
                     </div>
                     <div className="flex space-x-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><LinkedinIcon className="h-6 w-6" /></a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><GithubIcon className="h-6 w-6" /></a>
+                        <a href="https://www.linkedin.com/in/cyril-gourdon/" className="text-gray-400 hover:text-white transition-colors"><LinkedinIcon className="h-6 w-6" /></a>
+                        <a href="https://github.com/cyrisa02" className="text-gray-400 hover:text-white transition-colors"><GithubIcon className="h-6 w-6" /></a>
                     </div>
                     <div className="flex space-x-4 text-sm text-gray-400">
                         <a href="#" className="hover:text-white transition-colors">Mentions Légales</a>
