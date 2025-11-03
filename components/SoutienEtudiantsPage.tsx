@@ -50,9 +50,9 @@ const SoutienEtudiantsPage: React.FC = () => {
         {/* Image impactante (même photo que pour les seniors — peut être changée plus tard) */}
         <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
           <img
-            src="/images/senior1.png"
+            src="/images/Einsteinjunior.png"
             alt="Un technicien accompagne un étudiant avec un sourire devant un ordinateur — Support informatique de confiance"
-            className="w-full h-auto object-cover max-h-[400px] md:max-h-[500px] hover:scale-102 transition-transform duration-300"
+            className="w-full h-auto object-cover max-h-[400px] md:max-h-[800px] hover:scale-102 transition-transform duration-300"
           />
           <div className="bg-black/70 p-4 text-center">
             <p className="text-white text-sm italic">

@@ -85,7 +85,7 @@ const ComptabilitePage: React.FC = () => {
           </div>
         </section>
 
-        {/* Offres & formules */}
+        {/* Offres & formules en attente de validation
         <section className="mb-12 p-6 bg-gray-900/50 border border-gray-800 rounded-xl">
           <h2 className="text-xl font-bold text-white mb-3">Nos formules simples et transparentes</h2>
           <ul className="list-disc pl-5 space-y-2 text-gray-300">
@@ -97,6 +97,20 @@ const ComptabilitePage: React.FC = () => {
           <p className="mt-3 text-sm text-gray-400 italic">
             Première heure satisfait ou remboursé — sans condition.
           </p>
+        </section> */}
+
+        {/* Offres & formules */}
+        <section className="mb-12 p-6 bg-gray-900/50 border border-gray-800 rounded-xl">
+          <h2 className="text-xl font-bold text-white mb-3">Confidentialité, RGPD et Intelligence Artificielle : protégeons vos données comptables </h2>
+          <p className="text-gray-300 text-lg mb-8">
+          Dans le domaine de la comptabilité, la protection des données personnelles et professionnelles n’est pas une option : c’est une obligation légale (RGPD) et une exigence de confiance vis-à-vis de vos clients. Lorsqu’on intègre l’Intelligence Artificielle dans les processus comptables — pour automatiser des tâches, analyser des documents ou générer des rapports — il est essentiel de s’assurer que ces données sensibles ne quittent jamais votre périmètre de contrôle.
+          <br />
+          Les solutions d’IA basées sur le cloud, bien qu’efficaces, peuvent poser des risques importants en matière de confidentialité : transfert de données vers des serveurs tiers, absence de maîtrise sur le traitement, voire non-conformité avec le RGPD.
+          <br />
+          C’est pourquoi je recommande fortement aux PME de privilégier des modèles d’IA déployés localement, comme ceux proposés par Ollama. Ces solutions permettent d’exploiter toute la puissance de l’IA — analyse de factures, résumé de comptes, assistance à la rédaction — sans jamais transmettre vos données à l’extérieur. Vous gardez ainsi le contrôle total, tout en restant pleinement conforme au règlement européen.
+          <br />
+          L’IA locale, c’est l’innovation au service de la sécurité. Parlons-en ensemble pour adapter cette approche à vos besoins spécifiques — sans compromis sur la confidentialité.
+        </p>
         </section>
 
         {/* Témoignage Google (adapté) 
