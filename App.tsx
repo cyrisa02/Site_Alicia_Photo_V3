@@ -18,6 +18,12 @@ import AdministrationPage from './components/AdministrationPage';
 import RHPage from './components/RHPage';
 import FormationsPage from './components/FormationsPage';
 import AuditConseilPage from './components/AuditConseilPage';
+import MentionsLegalesPage from './components/MentionsLegalesPage';
+import PolitiqueConfidentialitePage from './components/PolitiqueConfidentialitePage';
+import ConditionsGeneralesVentePage from './components/ConditionsGeneralesPage';
+import ConditionsGeneralesUtilisationPage from './components/ConditionsGeneralesUtilisationPage';
+import ConformiteIAActPage from './components/ConformiteIAActPage';
+
 
 const App: React.FC = () => {
   return (
@@ -36,6 +42,11 @@ const App: React.FC = () => {
         <Route path="/rh" element={<RHPage />} />
         <Route path="/formations" element={<FormationsPage />} />
         <Route path="/audit-conseil" element={<AuditConseilPage />} />
+        <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
+        <Route path="/politique-confidentialite" element={<PolitiqueConfidentialitePage />} />
+        <Route path="/conditions-generales-de-vente" element={<ConditionsGeneralesVentePage />} />
+        <Route path="/conditions-generales-d-utilisation" element={<ConditionsGeneralesUtilisationPage />} />
+        <Route path="/conformite-ia-act" element={<ConformiteIAActPage />} />
       </Routes>
     </Router>
   );
