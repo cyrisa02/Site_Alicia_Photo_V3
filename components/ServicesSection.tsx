@@ -5,17 +5,17 @@ import { ChartBarIcon, AcademicCapIcon, UsersIcon, OfficeBuildingIcon, Megaphone
 import { Link } from 'react-router-dom';
 
 const services = [
-  { icon: <ChartBarIcon />, title: "Audit & Conseil", description: "Analyse de vos processus et feuille de route IA personnalisée." },
-  { icon: <AcademicCapIcon />, title: "Formations", description: "Rendez vos équipes opérationnelles sur les IA génératives." },
-  { icon: <UsersIcon />, title: "Ressources Humaines", description: "Agents IA pour l'analyse de CV, onboarding, et plus." },
-  { icon: <OfficeBuildingIcon />, title: "Administration", description: "Automatisation de newsletters, reportings et devis." },
-  { icon: <MegaphoneIcon />, title: "Marketing Digital", description: "Stratégie, veille concurrentielle et création de contenu automatisée." },
-  { icon: <CalculatorIcon />, title: "Comptabilité", description: "Agents intelligents pour la TVA et l'automatisation comptable." },
-  { icon: <BriefcaseIcon />, title: "Support Commercial", description: "Qualification de leads, relances clients et CRM intelligent." },
-  { icon: <ScaleIcon />, title: "Juridique", description: "Veille juridique, conformité RGPD et IA Act." },
-  { icon: <ComputerDesktopIcon />, title: "Sites & SEO Local", description: "Création de sites vitrines, e-commerce et référencement local." },
-  { icon: <LightBulbIcon />, title: "Créateurs d'Entreprises", description: "Conseil, organisation et bac à sable pour vos idées." },
-  { icon: <UserGroupIcon />, title: "Étudiants", description: "Outils et applications IA pour l'apprentissage et la recherche." },
+  { icon: <ChartBarIcon />, title: "Audit & Conseil", description: "Analyse de vos processus et feuille de route IA personnalisée." , href: "/audit-conseil"},
+  { icon: <AcademicCapIcon />, title: "Formations", description: "Rendez vos équipes opérationnelles sur les IA génératives." , href: "/formations"},
+  { icon: <UsersIcon />, title: "Ressources Humaines", description: "Agents IA pour l'analyse de CV, onboarding, et plus." , href: "/rh"},
+  { icon: <OfficeBuildingIcon />, title: "Administration", description: "Automatisation de newsletters, reportings et devis." , href: "/administration"},
+  { icon: <MegaphoneIcon />, title: "Marketing Digital", description: "Stratégie, veille concurrentielle et création de contenu automatisée." , href: "/marketing-digital"},
+  { icon: <CalculatorIcon />, title: "Comptabilité", description: "Agents intelligents pour la TVA et l'automatisation comptable." , href: "/comptabilite"},
+  { icon: <BriefcaseIcon />, title: "Support Commercial", description: "Qualification de leads, relances clients et CRM intelligent." , href: "/support-commercial"},
+  { icon: <ScaleIcon />, title: "Juridique", description: "Veille juridique, conformité RGPD et IA Act." , href: "/juridique"},
+  { icon: <ComputerDesktopIcon />, title: "Sites & SEO Local", description: "Création de sites vitrines, e-commerce et référencement local." , href: "/sites-seo-local"},
+  { icon: <LightBulbIcon />, title: "Créateurs d'Entreprises", description: "Conseil, organisation et bac à sable pour vos idées.", href: "/soutien-createurs" },
+  { icon: <UserGroupIcon />, title: "Étudiants", description: "Outils et applications IA pour l'apprentissage et la recherche.", href: "/soutien-etudiants"},
   { icon: <LifebuoyIcon />, title: "Soutien Numérique Seniors/Débutants", description: "Assistance informatique, antivirus et dépannage." , 
     href: "/soutien-seniors"}
 ];
