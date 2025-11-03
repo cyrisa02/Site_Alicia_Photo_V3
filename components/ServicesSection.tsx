@@ -16,7 +16,7 @@ const services = [
   { icon: <ComputerDesktopIcon />, title: "Sites & SEO Local", description: "Création de sites vitrines, e-commerce et référencement local." },
   { icon: <LightBulbIcon />, title: "Créateurs d'Entreprises", description: "Conseil, organisation et bac à sable pour vos idées." },
   { icon: <UserGroupIcon />, title: "Étudiants", description: "Outils et applications IA pour l'apprentissage et la recherche." },
-  { icon: <LifebuoyIcon />, title: "Soutien Numérique Seniors", description: "Assistance informatique, antivirus et dépannage." , 
+  { icon: <LifebuoyIcon />, title: "Soutien Numérique Seniors/Débutants", description: "Assistance informatique, antivirus et dépannage." , 
     href: "/soutien-seniors"}
 ];
 

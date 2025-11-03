@@ -48,10 +48,10 @@ const ContactSection: React.FC = () => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <input type="text" name="name" placeholder="Nom complet*" required value={formData.name} onChange={handleChange} className="bg-gray-900 border border-gray-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] outline-none" />
-                            <input type="email" name="email" placeholder="Email professionnel*" required value={formData.email} onChange={handleChange} className="bg-gray-900 border border-gray-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] outline-none" />
+                            <input type="email" name="email" placeholder="Email *" required value={formData.email} onChange={handleChange} className="bg-gray-900 border border-gray-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] outline-none" />
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <input type="text" name="company" placeholder="Entreprise*" required value={formData.company} onChange={handleChange} className="bg-gray-900 border border-gray-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] outline-none" />
+                            <input type="text" name="company" placeholder="Entreprise - Statut*" required value={formData.company} onChange={handleChange} className="bg-gray-900 border border-gray-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] outline-none" />
                             <input type="tel" name="phone" placeholder="Téléphone" value={formData.phone} onChange={handleChange} className="bg-gray-900 border border-gray-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] outline-none" />
                         </div>
                         <div>

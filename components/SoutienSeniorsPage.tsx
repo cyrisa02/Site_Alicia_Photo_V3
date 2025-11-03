@@ -1,10 +1,43 @@
 // src/pages/SoutienSeniorsPage.tsx
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Chatbot from '../components/Chatbot';
 
 const SoutienSeniorsPage: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80, // Compense le header fixe
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const handleNavClick = (id: string) => {
+    if (location.pathname === '/') {
+      scrollToSection(id);
+    } else {
+      navigate(`/#${id}`);
+      setTimeout(() => {
+        scrollToSection(id);
+      }, 100);
+    }
+  };
+
+  // Gère le cas où on arrive directement avec une ancre (ex: /seniors#contact)
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => scrollToSection(id), 150);
+    }
+  }, [location]);
+
   return (
     <div className="bg-[#0A0A0A] text-gray-300 antialiased min-h-screen">
       <Header />
@@ -32,6 +65,12 @@ const SoutienSeniorsPage: React.FC = () => {
         <p className="text-gray-300 text-lg mb-8">
           Vous débutez dans l'informatique et vous aimeriez utiliser votre ordinateur, tablette ou smartphone en toute sérénité ?
           <br />
+          Vous n'arrivez pas à connecter votre imprimante ou votre scanner à votre ordinateur ?
+          <br />
+          Vous avez des problèmes de connexion internet ?
+          <br />
+          Votre ordinateur tourne au ralenti ?
+          <br />
           <strong>Nous sommes là pour vous accompagner, pas à pas, sans jargon, avec patience et bienveillance.</strong>
         </p>
 
@@ -55,12 +94,12 @@ const SoutienSeniorsPage: React.FC = () => {
             <li><strong>À la séance</strong> : 45 € / heure, sans engagement.</li>
             <li><strong>Formule « Tranquillité »</strong> : 3 heures par mois à 120 € (soit 40 €/h), avec priorité d’intervention.</li>
             {/* 
-    <li><strong>Ateliers collectifs</strong> : initiation gratuite en partenariat avec les associations locales 
-    (Soissons, Fère-en-Tardenois, etc.).</li>
-  */}
+              <li><strong>Ateliers collectifs</strong> : initiation gratuite en partenariat avec les associations locales 
+              (Soissons, Fère-en-Tardenois, etc.).
+            */}
           </ul>
           <p className="mt-3 text-sm text-gray-400 italic">
-            Première heure satisfait ou remboursé  
+            Première heure satisfait ou remboursé
           </p>
         </section>
 
@@ -81,7 +120,7 @@ const SoutienSeniorsPage: React.FC = () => {
 
         {/* Proximité géographique */}
         <section className="p-6 bg-gray-900/50 border border-gray-800 rounded-xl">
-          <h2 className="text-xl font-bold text-white mb-3">📍 À Soissons et dans les Hauts-de-France</h2>
+          <h2 className="text-xl font-bold text-white mb-3">📍 À Soissons et ses environs</h2>
           <p className="text-gray-300">
             Nous intervenons à votre domicile ou en visioconférence, selon vos préférences.
             <br />
@@ -89,14 +128,16 @@ const SoutienSeniorsPage: React.FC = () => {
           </p>
         </section>
 
-        {/* CTA implicite */}
+        {/* CTA avec bouton fonctionnel */}
         <div className="mt-10 text-center">
-          <p className="text-gray-400">
-            Une question ? Besoin d’un diagnostic rapide ?
-          </p>
-          <p className="text-gray-300 mt-2">
-            Notre chatbot est là pour vous guider en quelques clics.
-          </p>
+          <p className="text-gray-400">Une question ? Besoin d’un diagnostic rapide ?</p>
+          <p className="text-gray-300 mt-2">Notre chatbot est là pour vous guider en quelques clics.</p>
+          <button
+            onClick={() => handleNavClick('contact')}
+            className="mt-4 bg-[#6366F1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#4f52c4] transition-colors duration-300"
+          >
+            Contactez-nous
+          </button>
         </div>
       </main>
       <Footer />
