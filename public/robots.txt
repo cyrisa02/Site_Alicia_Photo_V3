@@ -1,0 +1,19 @@
+# robots.txt pour https://www.alicia-gpt.fr
+User-agent: *
+Allow: /
+
+# Bloquer l'accès aux dossiers sensibles (si présents)
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Fichiers spécifiques à exclure
+Disallow: /thank-you/
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://www.alicia-gpt.fr/sitemap.xml
+
+# Respecter le crawl-delay (optionnel, utile si serveur limité)
+Crawl-delay: 10

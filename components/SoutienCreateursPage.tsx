@@ -50,7 +50,7 @@ const SoutienCreateursPage: React.FC = () => {
         {/* Image impactante (même que pour les seniors — symbolise l’accompagnement humain) */}
         <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
           <img
-            src="/images/senior1.png"
+            src="/images/createur.png"
             alt="Un technicien accompagne un créateur d'entreprise avec un sourire devant un ordinateur — Support informatique de confiance"
             className="w-full h-auto object-cover max-h-[400px] md:max-h-[500px] hover:scale-102 transition-transform duration-300"
           />

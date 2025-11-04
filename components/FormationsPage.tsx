@@ -47,6 +47,20 @@ const FormationsPage: React.FC = () => {
           Formations IA Génératives — Rendez Vos Équipes Opérationnelles en 1 à 3 Jours
         </h1>
 
+        {/* Image impactante */}
+        <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="/images/formation.png"
+            alt="Un formateur accompagne une assemblée avec un sourire devant un écran — Support informatique de confiance"
+            className="w-full h-auto object-cover max-h-[400px] md:max-h-[500px] hover:scale-102 transition-transform duration-300"
+          />
+          <div className="bg-black/70 p-4 text-center">
+            <p className="text-white text-sm italic">
+              “Support Formation — Votre aide de confiance”
+            </p>
+          </div>
+        </div>
+
         {/* Icône symbolique (pas d'image) */}
         <div className="mb-8 p-6 bg-gray-900/50 border border-gray-800 rounded-xl text-center">
           <svg
