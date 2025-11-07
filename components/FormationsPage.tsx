@@ -148,6 +148,39 @@ const FormationsPage: React.FC = () => {
             Demandez un audit gratuit
           </button>
         </div>
+
+                        {/* Section Ressources & Documents */}
+        <section className="mt-16 p-6 bg-gray-900/50 border border-gray-800 rounded-xl">
+          <h2 className="text-xl font-bold text-white mb-4">📄 Ressources utiles</h2>
+          <div className="space-y-4">
+            <a
+              href="/docs/formation.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200 text-gray-300"
+            >
+              <svg className="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.5l2 2H19a2 2 0 012 2v6" />
+              </svg>
+              <span><strong>Plan de formation</strong> : Maîtriser l’IA au quotidien</span>
+            </a>
+
+            <a
+              href="/docs/questionnaire.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200 text-gray-300"
+            >
+              <svg className="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+              <span><strong>Questionnaire pré-formation</strong> : Évaluer vos besoins</span>
+            </a>
+          </div>
+          <p className="mt-3 text-sm text-gray-400 italic">
+            📥 Cliquez pour ouvrir ou télécharger les documents (PDF, 1 page chacun).
+          </p>
+        </section>
       </main>
       <Footer />
       <Chatbot />
