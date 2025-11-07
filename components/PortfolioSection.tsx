@@ -4,32 +4,33 @@ import { ChevronLeftIcon, ChevronRightIcon } from './icons/UiIcons';
 
 const projects = [
     {
-        image: "https://picsum.photos/seed/project1/800/600",
-        year: 2025,
-        name: "Générateur de devis - Agent IA",
-        type: "Développement sur-mesure"
-    },
-    {
-        image: "https://picsum.photos/seed/project2/800/600",
+        image: "/images/reunion.png",
         year: 2025,
         name: "Compte rendu de réunion automatisé",
         type: "Automatisation & IA"
     },
     {
-        image: "https://picsum.photos/seed/project3/800/600",
+        image: "/images/devis.png",
+        year: 2025,
+        name: "Générateur de devis - Agent IA",
+        type: "Développement sur-mesure"
+    },
+    
+    {
+        image: "/images/formation2.png",
         year: 2025,
         name: "Consulting & Formation pour PME",
         type: "Stratégie & Formation"
     },
     {
-        image: "https://picsum.photos/seed/project4/800/600",
-        year: 2024,
+        image: "/images/seo.png",
+        year: 2025,
         name: "Optimisation SEO Local",
         type: "Marketing Digital"
     },
     {
-        image: "https://picsum.photos/seed/project5/800/600",
-        year: 2024,
+        image: "/images/vapi.png",
+        year: 2025,
         name: "Chatbot de Support Client",
         type: "Développement sur-mesure"
     }
@@ -59,7 +60,7 @@ const PortfolioSection: React.FC = () => {
                 </div>
                 
                 <div className="relative max-w-4xl mx-auto">
-                    <div className="overflow-hidden relative h-96 rounded-lg">
+                    <div className="overflow-hidden relative h-110 rounded-lg">
                         <div className="flex transition-transform ease-out duration-500 h-full" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                             {projects.map((project, index) => (
                                 <div key={index} className="w-full flex-shrink-0 h-full relative">
