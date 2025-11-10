@@ -15,7 +15,12 @@ const projects = [
         name: "Générateur de devis - Agent IA",
         type: "Développement sur-mesure"
     },
-    
+    {
+        image: "/images/scraping.png",
+        year: 2025,
+        name: "Web Scraping pour PME",
+        type: "Stratégie Marketing"
+    },
     {
         image: "/images/formation2.png",
         year: 2025,
@@ -65,7 +70,7 @@ const PortfolioSection: React.FC = () => {
                             {projects.map((project, index) => (
                                 <div key={index} className="w-full flex-shrink-0 h-full relative">
                                     <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
-                                    <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-8">
+                                    <div className="absolute inset-0 bg-black/20 flex flex-col justify-end p-8">
                                         <p className="text-sm text-[#00FFB3] font-semibold">{project.year} - {project.type}</p>
                                         <h3 className="text-2xl font-bold text-white">{project.name}</h3>
                                     </div>

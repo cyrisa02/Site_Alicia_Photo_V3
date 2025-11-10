@@ -13,7 +13,7 @@ const MarketingDigitalPage: React.FC = () => {
     const element = document.getElementById(id);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 80, // Compense le header fixe
+        top: element.offsetTop - 80,
         behavior: 'smooth',
       });
     }
@@ -30,7 +30,6 @@ const MarketingDigitalPage: React.FC = () => {
     }
   };
 
-  // Gère le cas où on arrive directement avec une ancre (ex: /marketing#contact)
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace('#', '');
@@ -44,10 +43,10 @@ const MarketingDigitalPage: React.FC = () => {
       <main className="container mx-auto px-4 py-16">
         {/* Titre principal */}
         <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-          Marketing Digital — Stratégie, Veille Concurrentielle & Création de Contenu Automatisée
+          Marketing Digital — Stratégie, Veille Concurrentielle, Création de Contenu Automatisée & Web Scraping
         </h1>
 
-        {/* Icône symbolique (pas d'image) */}
+        {/* Citation introductive */}
         <div className="mb-8 p-6 bg-gray-900/50 border border-gray-800 rounded-xl text-center">
           <svg
             className="w-12 h-12 mx-auto text-blue-400 mb-4"
@@ -64,24 +63,54 @@ const MarketingDigitalPage: React.FC = () => {
         </div>
 
         {/* Introduction rassurante */}
-        <p className="text-gray-300 text-lg mb-8">
-          Vous êtes artisan, commerçant, prestataire ou association locale, et vous avez besoin d’une présence digitale efficace, mais vous ne savez pas par où commencer ?
-          <br />
-          Vos concurrents sont mieux référencés ? Vos réseaux sociaux sont inactifs ? Vous n’avez pas le temps de créer du contenu régulièrement ?
-          <br />
+        <p className="text-gray-300 text-lg mb-12">
+          Vous êtes artisan, commerçant, prestataire ou association locale, et vous avez besoin d’une présence digitale efficace, mais vous ne savez pas par où commencer ?<br />
+          Vos concurrents sont mieux référencés ? Vos réseaux sociaux sont inactifs ? Vous n’avez pas le temps de créer du contenu régulièrement ?<br />
           <strong>Nous vous accompagnons pour mettre en place une stratégie digitale simple, automatisée et performante — sans jargon, sans stress, avec des résultats mesurables.</strong>
         </p>
+
+        {/* --- Nouvelle section : Web Scraping --- */}
+        <section id="web-scraping" className="mb-16 p-6 bg-gray-900/50 border border-gray-800 rounded-xl">
+          <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
+            <span className="mr-3">🔍</span>
+            Le Web Scraping : Votre Arme Secrète pour Dominer le Marché
+          </h2>
+          <p className="text-gray-300 text-lg mb-4">
+            <strong>Et si vous pouviez analyser vos concurrents en un clic — sans y passer des heures ?</strong>
+          </p>
+          <p className="text-gray-400 mb-4">
+            À Soissons comme ailleurs, les artisans, PME et commerçants qui réussissent ne se fient plus uniquement à leur intuition. Ils s’appuient sur <strong>des données réelles</strong> pour :
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-300">
+            <li>Connaître les prix exacts pratiqués par la concurrence (et ajuster les vôtres en temps réel)</li>
+            <li>Repérer les tendances locales (ex. : hausse des recherches « réparation vélo électrique à Soissons »)</li>
+            <li>Identifier les opportunités de marché invisibles à l’œil nu (ex. : un concurrent qui arrête une activité)</li>
+            <li>Mesurer la satisfaction client sur les avis Google, Facebook ou PagesJaunes</li>
+          </ul>
+
+          <div className="bg-gray-800/60 p-4 rounded-lg border-l-4 border-blue-500 mb-5">
+            <p className="text-gray-200 font-medium">
+              🤖 Le web scraping, c’est l’extraction automatisée de données publiques sur le web.
+              <br />
+              Nous transformons cette masse d’informations en <span className="text-blue-300">tableaux simples, alertes personnalisées et recommandations concrètes</span> — directement utiles à votre quotidien.
+            </p>
+          </div>
+
+          <p className="text-gray-400 italic">
+  <strong>Exemple concret :</strong> Un agent immobilier de l'OIse utilise notre veille annonces pour détecter en temps réel les biens sous-évalués sur Leboncoin et SeLoger. En croisant ces données avec les délais moyens de vente dans chaque quartier, il identifie les opportunités *avant* ses concurrents — et ajuste ses arguments commerciaux avec des comparatifs actualisés. Résultat : +30 % de mandats signés en 3 mois.
+</p>
+        </section>
 
         {/* Services proposés */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-white mb-4">Nos accompagnements marketing pour entrepreneurs locaux</h2>
           <div className="space-y-4 text-gray-400">
-            <p>✅ <strong>Stratégie digitale personnalisée</strong> : cible, canaux, calendrier, objectifs — adapté à votre activité et votre territoire (Soissons, Fère-en-Tardenois, etc.).</p>
-            <p>✅ <strong>Veille concurrentielle</strong> : analyse de vos concurrents locaux, points forts/faibles, opportunités à saisir.</p>
-            <p>✅ <strong>Création de contenu automatisée</strong> : posts, stories, newsletters, articles de blog — générés avec IA + personnalisation humaine.</p>
-            <p>✅ <strong>Gestion des réseaux sociaux</strong> : planification, publication, engagement, réponse aux commentaires — tout est géré pour vous.</p>
-            <p>✅ <strong>Campagnes Google & Meta Ads</strong> : création, optimisation, suivi des performances — pour attirer des clients locaux.</p>
-            <p>✅ <strong>Reporting mensuel</strong> : suivi des impressions, clics, conversions, ROI — pour ajuster votre stratégie en temps réel.</p>
+            <p>✅ <strong>Stratégie digitale personnalisée</strong> : cible, canaux, calendrier — adapté à votre activité et votre territoire (Soissons, Fère-en-Tardenois, etc.).</p>
+            <p>✅ <strong>Veille concurrentielle intelligente</strong> : analyse automatisée de vos concurrents locaux (prix, offres, avis, fréquence de publication).</p>
+            <p>✅ <strong>Création de contenu automatisée</strong> : posts, stories, newsletters — générés avec IA + validation humaine (ton aligné sur votre image).</p>
+            <p>✅ <strong>Gestion proactive des réseaux sociaux</strong> : planification, publication, modération, réponse aux messages — clé en main.</p>
+            <p>✅ <strong>Campagnes Google & Meta Ads locales</strong> : géociblage précis, budget maîtrisé, ROI mesuré.</p>
+            <p>✅ <strong>Reporting mensuel clair</strong> : chiffres + traduction en actions concrètes (ex. : « Vos stories ont +40 % d’engagement : on en fait plus ! »).</p>
           </div>
         </section>
 
@@ -89,9 +118,10 @@ const MarketingDigitalPage: React.FC = () => {
         <section className="mb-12 p-6 bg-gray-900/50 border border-gray-800 rounded-xl">
           <h2 className="text-xl font-bold text-white mb-3">Nos formules simples et transparentes</h2>
           <ul className="list-disc pl-5 space-y-2 text-gray-300">
-            <li><strong>Audit marketing initial</strong> : 150 € (analyse de votre présence digitale + plan d’action).</li>
-            <li><strong>Setup contenu automatisé</strong> : 250 € (configuration des outils, création des templates, premier mois gratuit).</li>
+            <li><strong>Audit marketing initial</strong> : 150 € (présence digitale + benchmark concurrents + plan d’action).</li>
+            <li><strong>Setup contenu automatisé</strong> : 250 € (outils, templates, premiers contenus — 1 mois offert).</li>
             <li><strong>Formule « Marketing Serein »</strong> : 199 €/mois (stratégie + contenu + veille + reporting + 1h de support/mois).</li>
+            <li><strong>Module « Veille Data »</strong> : +99 €/mois (suivi prix/concurrents + alertes tendances locales).</li>
             <li><strong>Campagne publicitaire ponctuelle</strong> : 300 € (création + gestion + suivi pendant 1 mois).</li>
           </ul>
           <p className="mt-3 text-sm text-gray-400 italic">
@@ -99,39 +129,25 @@ const MarketingDigitalPage: React.FC = () => {
           </p>
         </section>
 
-        {/* Témoignage Google (adapté) 
-        <section className="mb-12 p-6 bg-gray-900/50 border border-gray-700 rounded-xl text-center">
-          <div className="flex justify-center mb-2">
-            {[...Array(5)].map((_, i) => (
-              <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.736c-.784-.57-.38-1.81.588-1.81h3.461a1 1 0 00.95-.69l1.07-3.292z" />
-              </svg>
-            ))}
-          </div>
-          <blockquote className="text-gray-200 italic text-lg">
-            “En 1 mois, j’ai doublé mes messages sur Instagram grâce à leur contenu automatisé. Je n’avais jamais vu ça !”
-          </blockquote>
-          <p className="text-gray-400 mt-2">— Léa, créatrice de bijoux, Soissons</p>
-        </section>*/}
-
         {/* Proximité géographique */}
         <section className="p-6 bg-gray-900/50 border border-gray-800 rounded-xl">
           <h2 className="text-xl font-bold text-white mb-3">📍 À Soissons et ses environs</h2>
           <p className="text-gray-300">
-            Nous accompagnons les artisans, commerçants et associations locales dans leur développement digital.
-            <br />
+            Nous accompagnons les artisans, commerçants et associations locales dans leur développement digital.<br />
             <strong>Discrétion, réactivité et expertise locale</strong> sont nos engagements.
           </p>
         </section>
 
         {/* CTA avec bouton fonctionnel */}
-        <div className="mt-10 text-center">
-          <p className="text-gray-400">Vous voulez savoir combien de prospects vous perdez faute de présence digitale ?</p>
+        <div className="mt-12 text-center">
+          <p className="text-gray-400 text-lg">
+            Vous voulez savoir combien de prospects vous perdez — faute de visibilité, de données ou de contenu régulier ?
+          </p>
           <button
             onClick={() => handleNavClick('contact')}
-            className="mt-4 bg-[#6366F1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#4f52c4] transition-colors duration-300"
+            className="mt-4 bg-[#6366F1] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#4f52c4] transition-colors duration-300 text-lg"
           >
-            Demandez un audit gratuit
+            Demandez un audit gratuit 
           </button>
         </div>
       </main>

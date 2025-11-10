@@ -9,7 +9,7 @@ const services = [
   { icon: <AcademicCapIcon />, title: "Formations", description: "Rendez vos équipes opérationnelles sur les IA génératives." , href: "/formations"},
   { icon: <UsersIcon />, title: "Ressources Humaines", description: "Agents IA pour l'analyse de CV, onboarding, et plus." , href: "/rh"},
   { icon: <OfficeBuildingIcon />, title: "Administration", description: "Automatisation de newsletters, reportings et devis." , href: "/administration"},
-  { icon: <MegaphoneIcon />, title: "Marketing Digital", description: "Stratégie, veille concurrentielle et création de contenu automatisée." , href: "/marketing-digital"},
+  { icon: <MegaphoneIcon />, title: "Marketing Digital", description: "Stratégie, veille concurrentielle, création de contenu automatisée et web scraping." , href: "/marketing-digital"},
   { icon: <CalculatorIcon />, title: "Comptabilité", description: "Agents intelligents pour la TVA et l'automatisation comptable." , href: "/comptabilite"},
   { icon: <BriefcaseIcon />, title: "Support Commercial", description: "Qualification de leads, relances clients et CRM intelligent." , href: "/support-commercial"},
   { icon: <ScaleIcon />, title: "Juridique", description: "Veille juridique, conformité RGPD et IA Act." , href: "/juridique"},
